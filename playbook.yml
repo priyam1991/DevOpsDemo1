@@ -1,7 +1,7 @@
 # playbook.yml
 ---
-- hosts: localhost
-  connection: local
+- hosts: servers
+  become: yes
   tasks:
     - name: deploy nginx docker container
       docker_container:
