@@ -3,10 +3,10 @@
 - hosts: servers
   become: yes
   tasks:
-    - name: deploy nginx docker container
+    - name: deploy application container
       docker_container:
-        image: nginx:stable
-        name: nginx
+        image: apatil/devops-integration:latest
+        name: myapplication
         state: started
         auto_remove: true
         ports:
