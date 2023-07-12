@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DevopsIntegrationApplication {
 
-	@GetMapping(value = "/message")
+	@GetMapping(value = "/")
 	public String message(){
 		return "welcome to devops";
 	}
