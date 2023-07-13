@@ -5,9 +5,9 @@
   tasks:
     - name: deploy application container
       docker_container:
-        image: apatil/devops-integration:latest
+        image: ampatil/devops-integration:latest
         name: myapplication
         state: started
         auto_remove: true
         ports:
-          - "8080:8081"
+          - "9090:8081"
